@@ -7,6 +7,7 @@ import Logement from './pages/Logement'
 import Error from './pages/Error'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import './styles/index.css'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
