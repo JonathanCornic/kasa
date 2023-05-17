@@ -1,4 +1,4 @@
-import './index.css'
+import './CardContainer.css'
 
 function CardContainer() {
     return <section className="card-container"></section>

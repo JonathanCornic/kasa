@@ -1,5 +1,5 @@
 import logo from '../../assets/logo-blanc.png'
-import './index.css'
+import './Footer.css'
 
 function Footer() {
     return (
@@ -9,7 +9,7 @@ function Footer() {
                 alt="logo en forme de maison"
                 className="kasa-logo-blanc"
             />
-            <p>© 2020 Kasa. All rights reserved</p>
+            <p className="footer-copyright">© 2020 Kasa. All rights reserved</p>
         </div>
     )
 }
