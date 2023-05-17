@@ -1,10 +1,14 @@
 import Banner from '../../components/Banner'
+import bannerImage from '../../assets/banner-home.jpg'
 import CardContainer from '../../components/CardContainer'
 
-function Home() {
+const Home = () => {
     return (
         <>
-            <Banner />
+            <Banner
+                title="Chez vous, partout et ailleurs"
+                image={bannerImage}
+            />
             <CardContainer />
         </>
     )
