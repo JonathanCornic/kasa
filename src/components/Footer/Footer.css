@@ -1,7 +1,9 @@
 .footer-container {
-    width: 100%;
+    width: 100vw;
     height: 300px;
     background-color: black;
+    position: absolute;
+    left: 0;
 }
 
 .kasa-logo-blanc {

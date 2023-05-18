@@ -3,7 +3,7 @@ import './Error.css'
 
 function Error() {
     return (
-        <div className="error-container">
+        <main className="error-container">
             <div className="error-404">404</div>
             <p className="error-txt">
                 Oups, La page que vous demandez n'existe pas.
@@ -11,7 +11,7 @@ function Error() {
             <Link to="/" className="error-redirection">
                 Retournez sur la page d'accueil
             </Link>
-        </div>
+        </main>
     )
 }
 
