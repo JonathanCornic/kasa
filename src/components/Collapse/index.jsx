@@ -3,7 +3,7 @@ import Vector from '../../assets/Vector.svg'
 import { useState } from 'react'
 
 const Collapse = ({ title, description }) => {
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(true)
 
     function ToggleCollapse() {
         setToggle(!toggle)
@@ -22,7 +22,9 @@ const Collapse = ({ title, description }) => {
             </div>
             {!toggle && (
                 <div
-                    className={`collapse-description ${toggle ? 'collapsed' : ''}`}
+                    className={`collapse-description ${
+                        toggle ? 'collapsed' : ''
+                    }`}
                 >
                     {description}
                 </div>
