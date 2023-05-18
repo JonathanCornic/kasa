@@ -1,5 +1,5 @@
 import Banner from '../../components/headerComponents/Banner'
-import CardContainer from '../../components/mainComponents/CardContainer'
+import CardGallery from '../../components/mainComponents/CardGallery'
 import bannerImage from '../../assets/banner-home.jpg'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
                 title="Chez vous, partout et ailleurs"
                 image={bannerImage}
             />
-            <CardContainer />
+            <CardGallery />
         </>
     )
 }
