@@ -1,6 +1,6 @@
-import Banner from '../../components/Banner'
+import Banner from '../../components/headerComponents/Banner'
+import CardContainer from '../../components/mainComponents/CardContainer'
 import bannerImage from '../../assets/banner-home.jpg'
-import CardContainer from '../../components/CardContainer'
 
 const Home = () => {
     return (
