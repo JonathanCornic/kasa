@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Logo from '../../assets/logo-rouge.svg'
 import './Navbar.css'
 
-function Navbar() {
+const Navbar = () => {
+    const location = useLocation()
     return (
         <nav>
             <img
@@ -13,10 +14,22 @@ function Navbar() {
 
             <ul>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <Link
+                        to="/"
+                        className={location.pathname === '/' ? 'active' : ''}
+                    >
+                        Accueil
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/about">Á propos</Link>
+                    <Link
+                        to="/about"
+                        className={
+                            location.pathname === '/about' ? 'active' : ''
+                        }
+                    >
+                        Á propos
+                    </Link>
                 </li>
             </ul>
         </nav>

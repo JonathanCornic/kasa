@@ -15,3 +15,7 @@ nav ul li a {
     font-size: 30px;
     margin-left: 60px;
 }
+
+a.active {
+    border-bottom: 1px solid;
+}

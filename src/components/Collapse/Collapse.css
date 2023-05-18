@@ -16,12 +16,8 @@
     font-size: 30px;
 }
 
-.collapse-vector {
-    transform: rotateX(180deg);
-}
-
 .collapse-vector.collapsed {
-    transform: rotateX(0);
+    transform: rotateX(180deg);
 }
 
 .collapse-description {
