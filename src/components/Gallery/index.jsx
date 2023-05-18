@@ -4,7 +4,7 @@ import jsonData from '../../datas/datas.json'
 
 const Gallery = () => {
     return (
-        <ul>
+        <ul className="gallery-ul">
             {jsonData.map((item) => (
                 <Card key={item.id} cover={item.cover} title={item.title} />
             ))}

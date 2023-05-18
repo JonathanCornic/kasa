@@ -1,11 +1,12 @@
-.banner-header {
+.home-header {
     position: relative;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.gallery-main {
+
+.home-main {
     min-height: 500px;
-    background-color: rgba(223, 223, 223, 0.212);
+    background-color: #F6F6F6;
     border-radius: 25px;
     margin-bottom: 50px;
     padding: 50px;

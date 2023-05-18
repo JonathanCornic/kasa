@@ -1,0 +1,29 @@
+.collapse-container {
+    margin: 20px 5%;
+}
+
+.collapse-banner {
+    width: 100%;
+    background: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.collapse-title {
+    color: white;
+    font-size: 30px;
+}
+
+.collapse-vector {
+    transform: rotateX(180deg);
+}
+
+.collapse-description {
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 0 0 5px 5px;
+    padding: 30px 20px 10px 20px;
+    font-size: 23px;
+}

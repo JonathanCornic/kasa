@@ -6,7 +6,7 @@
     filter: brightness(50%)
 }
 
-.banner-header h1 {
+.banner-title {
     z-index: 1;
     position: absolute;
     top: 50%;

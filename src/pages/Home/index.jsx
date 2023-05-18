@@ -6,13 +6,13 @@ import './Home.css'
 const Home = () => {
     return (
         <>
-            <header className="banner-header">
+            <header className="home-header">
                 <Banner
                     title="Chez vous, partout et ailleurs"
                     image={bannerImage}
                 />
             </header>
-            <main className="gallery-main">
+            <main className="home-main">
                 <Gallery />
             </main>
         </>
