@@ -1,4 +1,4 @@
-import Carouselle from '../../components/Carouselle'
+import Carrousel from '../../components/Carrousel'
 import { useParams } from 'react-router-dom'
 import jsonData from '../../datas/datas.json'
 
@@ -8,11 +8,12 @@ const Logement = () => {
     return (
         <>
             <header>
-                <Carouselle pictures={selectedData.pictures} />
+                <Carrousel pictures={selectedData.pictures} />
             </header>
             <main>
                 <h2>{selectedData.title}</h2>
-                
+                <p>{selectedData.location}</p>
+                <p>{selectedData.tags}</p>
             </main>
         </>
     )
