@@ -1,5 +1,5 @@
 import './Collapse.css'
-import Vector from '../../assets/Vector.svg'
+import chevron from '../../assets/chevron.svg'
 import { useState } from 'react'
 
 const Collapse = ({ title, description }) => {
@@ -14,7 +14,7 @@ const Collapse = ({ title, description }) => {
             <div className="collapse-banner">
                 <div className="collapse-title">{title}</div>
                 <img
-                    src={Vector}
+                    src={chevron}
                     alt=""
                     className={`collapse-vector ${toggle ? 'collapsed' : ''}`}
                     onClick={ToggleCollapse}

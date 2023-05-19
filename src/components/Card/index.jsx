@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import './Card.css'
+
 const Card = ({ id, cover, title }) => {
     const navigate = useNavigate()
     const handleImageClick = () => {
