@@ -4,6 +4,7 @@ import Data from '../../datas/datas.json'
 import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
+import AuthorCard from '../../components/AuthorCard'
 
 const Logement = () => {
     const { id } = useParams()
@@ -15,8 +16,13 @@ const Logement = () => {
                 <Carrousel pictures={selectedData.pictures} />
             </header>
             <main>
-                <h2>{selectedData.title}</h2>
-                <p>{selectedData.location}</p>
+                <h1>{selectedData.title}</h1>
+                <h2>{selectedData.location}</h2>
+                <AuthorCard
+                    key={`${selectedData.id}-name`}
+                    picture={selectedData.host.picture}
+                    name={selectedData.host.name}
+                />
                 <Tag tags={selectedData.tags} />
                 <Rating rating={selectedData.rating} />
                 <Collapse
@@ -30,7 +36,9 @@ const Logement = () => {
                     content={
                         <ul>
                             {selectedData.equipments.map((equipment, index) => (
-                                <li key={`${selectedData.id}-${index}`}>
+                                <li
+                                    key={`${selectedData.id}-equipment-${index}`}
+                                >
                                     {equipment}
                                 </li>
                             ))}
