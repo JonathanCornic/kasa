@@ -2,7 +2,7 @@ import './Collapse.css'
 import chevron from '../../assets/chevron.svg'
 import { useState } from 'react'
 
-const Collapse = ({ title, description }) => {
+const Collapse = ({ title, content }) => {
     const [toggle, setToggle] = useState(true)
 
     function ToggleCollapse() {
@@ -21,11 +21,11 @@ const Collapse = ({ title, description }) => {
             </div>
             {!toggle && (
                 <div
-                    className={`collapse-description ${
+                    className={`collapse-content ${
                         toggle ? 'collapsed' : ''
                     }`}
                 >
-                    {description}
+                    {content}
                 </div>
             )}
         </div>
