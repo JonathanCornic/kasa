@@ -16,7 +16,7 @@
     font-size: 30px;
 }
 
-.collapse-vector.collapsed {
+.collapse-chevron.collapsed {
     transform: rotateX(180deg);
 }
 

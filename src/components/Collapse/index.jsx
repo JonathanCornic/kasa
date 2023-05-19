@@ -11,13 +11,12 @@ const Collapse = ({ title, description }) => {
 
     return (
         <div className="collapse-container">
-            <div className="collapse-banner">
+            <div className="collapse-banner" onClick={ToggleCollapse}>
                 <div className="collapse-title">{title}</div>
                 <img
                     src={chevron}
                     alt=""
-                    className={`collapse-vector ${toggle ? 'collapsed' : ''}`}
-                    onClick={ToggleCollapse}
+                    className={`collapse-chevron ${toggle ? 'collapsed' : ''}`}
                 />
             </div>
             {!toggle && (

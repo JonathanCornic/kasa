@@ -1,0 +1,6 @@
+.rating-container ul{
+    display: flex;
+}
+.rating-container ul li{
+    margin-left: 5px;
+}
