@@ -13,13 +13,15 @@ const About = () => {
                 </div>
             </header>
             <main className="about-main">
-                {Data.map((item) => (
-                    <Collapse
-                        key={item.id}
-                        title={item.title}
-                        content={item.description}
-                    />
-                ))}
+                <div className="collapse-container-about">
+                    {Data.map((item) => (
+                        <Collapse
+                            key={item.id}
+                            title={item.title}
+                            content={item.description}
+                        />
+                    ))}
+                </div>
             </main>
         </>
     )

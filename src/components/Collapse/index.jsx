@@ -10,7 +10,7 @@ const Collapse = ({ title, content }) => {
     }
 
     return (
-        <div className="collapse-container">
+        <>
             <div className="collapse-banner" onClick={ToggleCollapse}>
                 <div className="collapse-title">{title}</div>
                 <img
@@ -28,7 +28,7 @@ const Collapse = ({ title, content }) => {
                     {content}
                 </div>
             )}
-        </div>
+        </>
     )
 }
 export default Collapse

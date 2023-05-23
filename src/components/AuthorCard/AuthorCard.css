@@ -1,9 +1,3 @@
-.author-card-container{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 4rem;
-}
 .author-card-container img {
     width: 3rem;
     border-radius: 50%;

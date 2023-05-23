@@ -1,5 +1,8 @@
-.container-titre{
+.container-titre {
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-titre h1 {
@@ -13,9 +16,28 @@
     font-weight: 400;
     margin: 0.5rem 0;
 }
-.container-rating-author{
+
+.tag-container {
+    margin: 0.5rem 0;
+}
+
+.container-rating-author {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+}
+
+.author-card-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 4rem;
+}
+
+.collapse-container-logement {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

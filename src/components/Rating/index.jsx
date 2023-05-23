@@ -13,15 +13,14 @@ const Rating = ({ rating }) => {
     }
 
     return (
-        <div className="rating-container">
-            <ul>
-                {Array.from({ length: maxRating }, (_, index) => (
-                    <li key={index}>
-                        <img src={getStarImage(index)} alt="Star" />
-                    </li>
-                ))}
-            </ul>
-        </div>
+
+        <ul className='rating-ul'>
+            {Array.from({ length: maxRating }, (_, index) => (
+                <li key={index}>
+                    <img src={getStarImage(index)} alt="Star" />
+                </li>
+            ))}
+        </ul>
     )
 }
 

@@ -3,3 +3,9 @@
     padding-bottom: 70%;
     position: relative;
 }
+.collapse-container-about {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

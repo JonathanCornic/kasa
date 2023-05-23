@@ -1,9 +1,9 @@
-.rating-container ul{
+.rating-ul{
     display: flex;
 }
-.rating-container ul li{
+.rating-ul li{
     margin-left: 0.2rem;
 }
-.rating-container ul li img{
+.rating-ul li img{
     width: 1rem;
 }

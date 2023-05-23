@@ -17,39 +17,51 @@ const Logement = () => {
                 <Carrousel pictures={selectedData.pictures} />
             </header>
             <main>
-                <div className='container-titre'>
-                    <h1>{selectedData.title}</h1>
-                    <h2>{selectedData.location}</h2>
-                    <Tag tags={selectedData.tags} />
-                </div>
-                <div className='container-rating-author'>
-                    <AuthorCard
-                        key={`${selectedData.id}-name`}
-                        picture={selectedData.host.picture}
-                        name={selectedData.host.name}
+                <section className="container-info">
+                    <div className="container-titre">
+                        <h1>{selectedData.title}</h1>
+                        <h2>{selectedData.location}</h2>
+                        <div className="tag-container">
+                            <Tag tags={selectedData.tags} />
+                        </div>
+                    </div>
+                    <div className="container-rating-author">
+                        <figure className="author-card-container">
+                            <AuthorCard
+                                key={`${selectedData.id}-name`}
+                                picture={selectedData.host.picture}
+                                name={selectedData.host.name}
+                            />
+                        </figure>
+                        <div className="rating-container">
+                            <Rating rating={selectedData.rating} />
+                        </div>
+                    </div>
+                </section>
+                <div className="collapse-container-logement">
+                    <Collapse
+                        key={`${selectedData.id}-description`}
+                        title="Description"
+                        content={selectedData.description}
                     />
-                    <Rating rating={selectedData.rating} />
+                    <Collapse
+                        key={`${selectedData.id}-equipments`}
+                        title="Équipements"
+                        content={
+                            <ul>
+                                {selectedData.equipments.map(
+                                    (equipment, index) => (
+                                        <li
+                                            key={`${selectedData.id}-equipment-${index}`}
+                                        >
+                                            {equipment}
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        }
+                    />
                 </div>
-                <Collapse
-                    key={`${selectedData.id}-description`}
-                    title="Description"
-                    content={selectedData.description}
-                />
-                <Collapse
-                    key={`${selectedData.id}-equipments`}
-                    title="Équipements"
-                    content={
-                        <ul>
-                            {selectedData.equipments.map((equipment, index) => (
-                                <li
-                                    key={`${selectedData.id}-equipment-${index}`}
-                                >
-                                    {equipment}
-                                </li>
-                            ))}
-                        </ul>
-                    }
-                />
             </main>
         </>
     )
