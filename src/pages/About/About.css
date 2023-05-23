@@ -1,8 +1,5 @@
-.about-header {
+.about-banner-container{
+    width: 100%;
+    padding-bottom: 70%;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.about-main {
-    margin-bottom: 50px;
 }

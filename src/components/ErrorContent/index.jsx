@@ -3,15 +3,16 @@ import './ErrorContent.css'
 
 const ErrorContent = () => {
     return (
-        <>
-            <div className="error-404">404</div>
+        <div className="error-container">
+            <h1 className="error-404">404</h1>
             <p className="error-txt">
-                Oups, La page que vous demandez n'existe pas.
+                <span>Oups, La page que</span>
+                <span>vous demandez n'existe pas.</span>
             </p>
             <Link to="/" className="error-redirection">
                 Retournez sur la page d'accueil
             </Link>
-        </>
+        </div>
     )
 }
 

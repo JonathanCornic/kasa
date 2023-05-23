@@ -1,14 +1,27 @@
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
 .error-404 {
-    font-size: 400px;
     font-weight: 700;
+    font-size: 25vw;
 }
 
 .error-txt {
-    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 5vw;
+    padding: 1rem;
+}
+.error-txt span{
+    display: block;
 }
 
 .error-redirection {
-    font-size: 30px;
+    font-size: 5vw;
     text-decoration: underline;
-    margin: 250px;
+    padding: 5rem 0;
 }

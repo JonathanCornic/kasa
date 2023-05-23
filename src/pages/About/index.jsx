@@ -8,7 +8,9 @@ const About = () => {
     return (
         <>
             <header className="about-header">
-                <Banner image={bannerImage} />
+                <div className="about-banner-container">
+                    <Banner image={bannerImage} />
+                </div>
             </header>
             <main className="about-main">
                 {Data.map((item) => (

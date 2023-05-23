@@ -1,5 +1,5 @@
 .collapse-container {
-    margin: 20px 5%;
+    margin: 1rem 0;
 }
 
 .collapse-banner {
@@ -7,13 +7,18 @@
     background: #FF6060;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 2vw;
+    position: relative;
+    z-index: 1;
 }
 
 .collapse-title {
     color: white;
-    font-size: 30px;
+    font-size: 5vw;
+}
+.collapse-chevron{
+    width: 4vw;
 }
 
 .collapse-chevron.collapsed {
@@ -21,14 +26,15 @@
 }
 
 .collapse-content {
+    position: relative;
+    top: -2vw;
     width: 100%;
     background-color: #F6F6F6;
-    border-radius: 0 0 5px 5px;
-    padding: 30px 20px 10px 20px;
-    font-size: 23px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    font-size: 5vw;
 }
 
 .collapse-description.collapsed {
     display: none;
-
 }

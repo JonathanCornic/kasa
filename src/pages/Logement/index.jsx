@@ -5,6 +5,7 @@ import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
 import AuthorCard from '../../components/AuthorCard'
+import './Logement.css'
 
 const Logement = () => {
     const { id } = useParams()
@@ -16,15 +17,19 @@ const Logement = () => {
                 <Carrousel pictures={selectedData.pictures} />
             </header>
             <main>
-                <h1>{selectedData.title}</h1>
-                <h2>{selectedData.location}</h2>
-                <AuthorCard
-                    key={`${selectedData.id}-name`}
-                    picture={selectedData.host.picture}
-                    name={selectedData.host.name}
-                />
-                <Tag tags={selectedData.tags} />
-                <Rating rating={selectedData.rating} />
+                <div className='container-titre'>
+                    <h1>{selectedData.title}</h1>
+                    <h2>{selectedData.location}</h2>
+                    <Tag tags={selectedData.tags} />
+                </div>
+                <div className='container-rating-author'>
+                    <AuthorCard
+                        key={`${selectedData.id}-name`}
+                        picture={selectedData.host.picture}
+                        name={selectedData.host.name}
+                    />
+                    <Rating rating={selectedData.rating} />
+                </div>
                 <Collapse
                     key={`${selectedData.id}-description`}
                     title="Description"

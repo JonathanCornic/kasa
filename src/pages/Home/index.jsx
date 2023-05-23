@@ -7,10 +7,12 @@ const Home = () => {
     return (
         <>
             <header className="home-header">
-                <Banner
-                    title="Chez vous, partout et ailleurs"
-                    image={bannerImage}
-                />
+                <div className="home-banner-container">
+                    <Banner
+                        title="Chez vous, partout et ailleurs"
+                        image={bannerImage}
+                    />
+                </div>
             </header>
             <main className="home-main">
                 <Gallery />

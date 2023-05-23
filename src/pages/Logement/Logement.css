@@ -1,0 +1,21 @@
+.container-titre{
+    margin-bottom: 1rem;
+}
+
+.container-titre h1 {
+    font-size: 7vw;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.container-titre h2 {
+    font-size: 5vw;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+.container-rating-author{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
