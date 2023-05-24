@@ -1,4 +1,4 @@
-.home-header {
+.home-header, .home-main {
     margin-bottom: 1rem;
 }
 
@@ -12,6 +12,60 @@
     filter: brightness(50%)
 }
 
-.home-main {
-    margin-bottom: 1rem;
+.banner-title {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(1rem, 5vw, 2.2rem);
+    letter-spacing: 0.5vw;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+
+    .home-banner-container {
+        padding-bottom: 25%;
+    }
+    
+    .home-header, .home-main{
+        margin-bottom: 2rem;
+    }
+
+    .gallery {
+        background-color: #F6F6F6;
+        padding: 5%;
+    }
+
+    .gallery ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card h2{
+        font-size: clamp(1.1rem, 1vw, 1.8rem);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .home-banner-container {
+        padding-bottom: 20%;
+    }
+    .home-header, .home-main{
+        margin-bottom: 3rem;
+    }
+   
+    .gallery ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .banner-title {
+        left: 50%;
+        white-space: nowrap;
+
+    }
+    .card h2{
+        font-size: clamp(0.8rem, 1.5vw, 2.2rem);
+    }
 }
