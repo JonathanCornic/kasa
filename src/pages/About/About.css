@@ -7,5 +7,25 @@
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+
+@media (min-width: 768px){
+    .about-banner-container {
+        padding-bottom: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about-banner-container {
+        padding-bottom: 20%;
+    }
+    .about-header, .about-main{
+        margin-bottom: 1rem;
+    }
+    .collapse-container-about{
+        padding: 0 10%;
+    }
 }

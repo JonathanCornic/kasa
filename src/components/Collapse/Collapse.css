@@ -3,18 +3,18 @@
     background: #FF6060;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    border-radius: 2vw;
+    padding: 0.5% 2%;
+    border-radius: clamp(0.3rem, 0.9%, 0.5rem);
     position: relative;
     z-index: 1;
 }
 
 .collapse-title {
     color: white;
-    font-size: 5vw;
+    font-size: clamp(0.5rem, 4vw, 3rem);
 }
 .collapse-chevron{
-    width: 4vw;
+    width: clamp(0.5rem, 4vw, 3rem);
 }
 
 .collapse-chevron.collapsed {
@@ -23,12 +23,12 @@
 
 .collapse-content {
     position: relative;
-    top: -4vw;
+    top: clamp(-6vw, -50px, -20px);
     width: 100%;
     background-color: #F6F6F6;
     border-radius: 0 0 0.5rem 0.5rem;
-    padding: 2rem 1rem 0.5rem 1rem;
-    font-size: 5vw;
+    padding: 7% 2rem ;
+    font-size: clamp(0.5rem, 4vw, 4rem);
 }
 
 .collapse-description.collapsed {
