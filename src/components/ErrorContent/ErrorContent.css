@@ -1,4 +1,4 @@
-.error-container{
+.error-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,21 +7,22 @@
 
 .error-404 {
     font-weight: 700;
-    font-size: 25vw;
+    font-size: clamp(5rem, 15vw, 18rem);
 }
 
 .error-txt {
     text-align: center;
     font-weight: 500;
-    font-size: 5vw;
+    font-size: clamp(1rem, 3vw, 2rem);
     padding: 1rem;
 }
-.error-txt span{
+
+.error-txt span {
     display: block;
 }
 
 .error-redirection {
-    font-size: 5vw;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: underline;
     padding: 5rem 0;
 }

@@ -6,7 +6,7 @@ const ErrorContent = () => {
         <div className="error-container">
             <h1 className="error-404">404</h1>
             <p className="error-txt">
-                <span>Oups, La page que</span>
+                <span>Oups, La page que</span>{' '}
                 <span>vous demandez n'existe pas.</span>
             </p>
             <Link to="/" className="error-redirection">
