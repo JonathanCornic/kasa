@@ -3,5 +3,8 @@
 }
 
 .rating-ul li {
-    margin-left: 5%;
+    margin-left: 2%;
+}
+.rating-ul li img{
+    width: calc(1rem + 1vw);
 }

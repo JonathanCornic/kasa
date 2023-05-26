@@ -1,4 +1,17 @@
+.author-card{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 .author-card-container img {
+    width: calc(5rem + 1vw);
     border-radius: 50%;
     object-fit: cover;
+}
+.author-card-container figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 2vw;
+    font-size: calc(1rem + 1vw);
 }

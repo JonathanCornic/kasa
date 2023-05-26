@@ -13,10 +13,12 @@ const Housing = () => {
 
     return (
         <>
-            <header className='housing-header'>
-                <Carrousel pictures={selectedData.pictures} />
+            <header className="housing-header">
+                <div className="carrousel-container">
+                    <Carrousel pictures={selectedData.pictures} />
+                </div>
             </header>
-            <main className='housing-main'>
+            <main className="housing-main">
                 <section className="info-container">
                     <div className="title-container">
                         <h1>{selectedData.title}</h1>
@@ -26,13 +28,14 @@ const Housing = () => {
                         </div>
                     </div>
                     <div className="rating-author-container">
-                        <figure className="author-card-container">
+                        <div className="author-card-container">
                             <AuthorCard
                                 key={`${selectedData.id}-name`}
                                 picture={selectedData.host.picture}
                                 name={selectedData.host.name}
                             />
-                        </figure>
+                        </div>
+
                         <div className="rating-container">
                             <Rating rating={selectedData.rating} />
                         </div>
