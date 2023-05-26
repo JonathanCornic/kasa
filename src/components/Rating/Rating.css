@@ -1,9 +1,7 @@
-.rating-ul{
+.rating-ul {
     display: flex;
 }
-.rating-ul li{
-    margin-left: 0.2rem;
-}
-.rating-ul li img{
-    width: 1rem;
+
+.rating-ul li {
+    margin-left: 5%;
 }

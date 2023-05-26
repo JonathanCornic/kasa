@@ -2,23 +2,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    height: clamp(4rem, 10vw, 10rem);
+    padding: 2rem 0;
 }
-
 nav ul {
     display: flex;
 }
-.kasa-logo-rouge{
-    width: clamp(8rem, 15vw, 15rem);
+.kasa-logo-red{
+    width: calc(10rem + 10vw);
 }
-
-nav ul li a {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(0.7rem, 2vw, 1.7rem);
-    margin-left: 2.5vw;
+nav ul li a{
+    font-size: calc(1rem + 1vw);
+    margin-left: 3vw;
 }
 
 a.active {
     border-bottom: 1px solid;
 }
+

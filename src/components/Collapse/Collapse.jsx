@@ -10,7 +10,7 @@ const Collapse = ({ title, content }) => {
     }
 
     return (
-        <>
+        <li className="collapse">
             <div className="collapse-banner" onClick={ToggleCollapse}>
                 <div className="collapse-title">{title}</div>
                 <img
@@ -21,14 +21,13 @@ const Collapse = ({ title, content }) => {
             </div>
             {!toggle && (
                 <div
-                    className={`collapse-content ${
-                        toggle ? 'collapsed' : ''
-                    }`}
+                    className={`collapse-content ${toggle ? 'collapsed' : ''}`}
                 >
                     {content}
                 </div>
             )}
-        </>
+        </li>
     )
 }
+
 export default Collapse

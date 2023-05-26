@@ -1,31 +1,31 @@
-import Carrousel from '../../components/Carrousel'
 import { useParams } from 'react-router-dom'
 import Data from '../../datas/datas.json'
-import Tag from '../../components/Tag'
-import Rating from '../../components/Rating'
-import Collapse from '../../components/Collapse'
-import AuthorCard from '../../components/AuthorCard'
-import './Logement.css'
+import Carrousel from '../../components/Carrousel/Carrousel.jsx'
+import Tag from '../../components/Tag/Tag.jsx'
+import Rating from '../../components/Rating/Rating.jsx'
+import Collapse from '../../components/Collapse/Collapse.jsx'
+import AuthorCard from '../../components/AuthorCard/AuthorCard.jsx'
+import './Housing.css'
 
-const Logement = () => {
+const Housing = () => {
     const { id } = useParams()
     const selectedData = Data.find((item) => item.id === id)
 
     return (
         <>
-            <header>
+            <header className='housing-header'>
                 <Carrousel pictures={selectedData.pictures} />
             </header>
-            <main>
-                <section className="container-info">
-                    <div className="container-titre">
+            <main className='housing-main'>
+                <section className="info-container">
+                    <div className="title-container">
                         <h1>{selectedData.title}</h1>
                         <h2>{selectedData.location}</h2>
                         <div className="tag-container">
                             <Tag tags={selectedData.tags} />
                         </div>
                     </div>
-                    <div className="container-rating-author">
+                    <div className="rating-author-container">
                         <figure className="author-card-container">
                             <AuthorCard
                                 key={`${selectedData.id}-name`}
@@ -38,7 +38,7 @@ const Logement = () => {
                         </div>
                     </div>
                 </section>
-                <div className="collapse-container-logement">
+                <div className="housing-collapse-container">
                     <Collapse
                         key={`${selectedData.id}-description`}
                         title="Description"
@@ -67,4 +67,4 @@ const Logement = () => {
     )
 }
 
-export default Logement
+export default Housing

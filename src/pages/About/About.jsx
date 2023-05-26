@@ -1,7 +1,7 @@
-import Banner from '../../components/Banner'
-import Collapse from '../../components/Collapse'
-import Data from '../../datas/about.json'
+import Banner from '../../components/Banner/Banner'
 import bannerImage from '../../assets/banner-about.jpg'
+import Collapse from '../../components/Collapse/Collapse'
+import Data from '../../datas/about.json'
 import './About.css'
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
                 </div>
             </header>
             <main className="about-main">
-                <div className="collapse-container-about">
+                <ul className="about-collapse-container">
                     {Data.map((item) => (
                         <Collapse
                             key={item.id}
@@ -21,9 +21,10 @@ const About = () => {
                             content={item.description}
                         />
                     ))}
-                </div>
+                </ul>
             </main>
         </>
     )
 }
+
 export default About

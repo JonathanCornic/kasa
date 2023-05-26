@@ -1,5 +1,5 @@
-.home-header, .home-main {
-    margin-bottom: 1rem;
+.home-main {
+    margin: 2vw auto;
 }
 
 .home-banner-container {
@@ -9,63 +9,95 @@
 }
 
 .home-banner-container img {
-    filter: brightness(50%)
+    filter: brightness(75%)
 }
 
 .banner-title {
-    z-index: 1;
     position: absolute;
     top: 50%;
-    left: 38%;
+    left: 30%;
+    z-index: 1;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: clamp(1rem, 5vw, 2.2rem);
-    letter-spacing: 0.5vw;
+    font-size: 5vw;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
 }
 
+.banner-title span {
+    color: white;
+}
+
+.gallery ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
 @media (min-width: 768px) {
+    .home-main {
+        margin: 3vw auto;
+    }
 
     .home-banner-container {
         padding-bottom: 25%;
     }
-    
-    .home-header, .home-main{
-        margin-bottom: 2rem;
+
+    .banner-title {
+        left: 50%;
+        display: initial;
+        font-size: 3vw;
     }
 
     .gallery {
         background-color: #F6F6F6;
-        padding: 5%;
+        border-radius: calc(0.5rem + 1vw);
     }
 
     .gallery ul {
         grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+        padding: 5%;
     }
-    .card h2{
-        font-size: clamp(1.1rem, 1vw, 1.8rem);
+
+    .card-title-container h2 {
+        font-size: 2vw;
     }
 }
 
 @media (min-width: 1024px) {
-
+    .home-main{
+        margin: 4vw auto;
+    }
     .home-banner-container {
         padding-bottom: 20%;
     }
-    .home-header, .home-main{
-        margin-bottom: 3rem;
-    }
-   
+
     .gallery ul {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 4vw;
+        padding: 5%;
     }
 
-    .banner-title {
-        left: 50%;
-        white-space: nowrap;
+    .card {
+        border-radius: calc(0.1rem + 0.5vw);
+    }
+
+    .card-image-container img {
+        border-top-left-radius: calc(0.1rem + 0.5vw);
+        border-top-right-radius: calc(0.1rem + 0.5vw);
 
     }
-    .card h2{
-        font-size: clamp(0.8rem, 1.5vw, 2.2rem);
+
+    .card-title-container {
+        border-bottom-left-radius: calc(0.1rem + 0.5vw);
+        border-bottom-right-radius: calc(0.1rem + 0.5vw);
+    }
+
+    .card-title-container h2 {
+        font-size: 1.5vw;
     }
 }

@@ -1,36 +1,41 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
 .collapse-banner {
-    width: 100%;
     background: #FF6060;
     display: flex;
     justify-content: space-between;
     padding: 0.5% 2%;
-    border-radius: clamp(0.3rem, 0.9%, 0.5rem);
+    border-radius: calc(0.1rem + 0.5vw);
+    cursor: pointer;
     position: relative;
     z-index: 1;
 }
 
 .collapse-title {
     color: white;
-    font-size: clamp(0.5rem, 4vw, 3rem);
+    font-size: 4vw;
 }
-.collapse-chevron{
-    width: clamp(0.5rem, 4vw, 3rem);
+
+.collapse-chevron {
+    width: 3vw;
 }
 
 .collapse-chevron.collapsed {
     transform: rotateX(180deg);
 }
-
-.collapse-content {
+.collapse-content{
     position: relative;
-    top: clamp(-6vw, -50px, -20px);
-    width: 100%;
+    top: -1vw;
     background-color: #F6F6F6;
-    border-radius: 0 0 0.5rem 0.5rem;
-    padding: 7% 2rem ;
-    font-size: clamp(0.5rem, 4vw, 4rem);
+    padding: 7% 5% ;
+    border-bottom-left-radius: calc(0.1rem + 0.5vw);
+    border-bottom-right-radius: calc(0.1rem + 0.5vw);
+    font-size: 4vw;
 }
-
 .collapse-description.collapsed {
     display: none;
 }

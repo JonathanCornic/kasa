@@ -1,15 +1,8 @@
-.about-banner-container{
+.about-banner-container {
     width: 100%;
     padding-bottom: 70%;
     position: relative;
 }
-.collapse-container-about {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 
 @media (min-width: 768px){
     .about-banner-container {
@@ -22,10 +15,17 @@
     .about-banner-container {
         padding-bottom: 20%;
     }
-    .about-header, .about-main{
-        margin-bottom: 1rem;
+    .about-main{
+        padding: 2% 10%;
     }
-    .collapse-container-about{
-        padding: 0 10%;
+    .collapse-title{
+        font-size: 2.5vw;
     }
+    .collapse-chevron{
+        width: 2vw;
+    }
+    .collapse-content{
+        font-size: 2.5vw;
+    }
+
 }

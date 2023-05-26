@@ -1,10 +1,4 @@
 .author-card-container img {
-    width: 3rem;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
-    margin-left: 0.5rem;
-}
-.author-card-container figcaption{
-    text-align: right;
 }

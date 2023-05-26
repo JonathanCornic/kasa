@@ -1,28 +1,25 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Logement from './pages/Logement'
-import Error from './pages/Error'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import './styles/index.css'
+import Navbar from './components/Navbar/Navbar'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Housing from './pages/Housing/Housing'
+import Error from './pages/Error/Error'
+import Footer from './components/Footer/Footer'
+import './index.css'
 
-const rootElement = document.getElementById('root')
-const root = createRoot(rootElement)
-
-root.render(
-    <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
         <Router>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/logement/:id" element={<Logement />} />
+                <Route path="/housing/:id" element={<Housing />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
         </Router>
-    </StrictMode>
+    </React.StrictMode>
 )

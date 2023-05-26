@@ -1,16 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
-import Logo from '../../assets/logo-red.svg'
+import logo from '../../assets/logo-red.svg'
 import './Navbar.css'
 
 const Navbar = () => {
     const location = useLocation()
     return (
         <nav>
-            <img
-                src={Logo}
-                alt="logo en forme de maison"
-                className="kasa-logo-rouge"
-            />
+            <img src={logo} alt="" className="kasa-logo-red" />
 
             <ul>
                 <li>
@@ -28,7 +24,7 @@ const Navbar = () => {
                             location.pathname === '/about' ? 'active' : ''
                         }
                     >
-                        Á propos
+                        A propos
                     </Link>
                 </li>
             </ul>

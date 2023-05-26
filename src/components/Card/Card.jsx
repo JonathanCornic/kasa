@@ -3,15 +3,16 @@ import './Card.css'
 
 const Card = ({ id, cover, title }) => {
     const navigate = useNavigate()
+
     const handleImageClick = () => {
-        navigate(`/logement/${id}`)
+        navigate(`/housing/${id}`)
     }
     return (
         <li className="card" onClick={handleImageClick}>
-            <div className="image-container">
+            <div className="card-image-container">
                 <img src={cover} alt="" />
             </div>
-            <div className="title-container">
+            <div className="card-title-container">
                 <h2>{title}</h2>
             </div>
         </li>

@@ -1,18 +1,39 @@
 .error-main {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.error-title {
+    font-weight: 700;
+    font-size: 20vw;
+}
+
+.error-txt {
+    text-align: center;
+    font-weight: 500;
+    font-size: calc(1.3rem + 2vw);
+    margin: 3rem 0;
+}
+
+.error-txt span {
+    display: block;
+}
+
+.error-redirection {
+    font-size: calc(1.2rem + 1vw);
+    text-decoration: underline;
+    margin: 10rem 0;
 }
 
 @media (min-width:1024px) {
 
-    .error-main{
-        margin-top: 3rem;
-    }
     .error-txt span{
         display: initial;
     }
     .error-redirection{
-        padding-top: 12rem;
+        margin: 20rem 0;
 
     }
 }

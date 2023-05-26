@@ -8,3 +8,4 @@ const Carrousel = ({ pictures }) => {
     )
 }
 export default Carrousel
+
