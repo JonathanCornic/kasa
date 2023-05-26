@@ -4,14 +4,14 @@
     align-items: center;
 }
 .author-card-container img {
-    width: calc(5rem + 1vw);
+    width: calc(3rem + 2vw);
     border-radius: 50%;
     object-fit: cover;
 }
 .author-card-container figcaption{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     margin: 2vw;
     font-size: calc(1rem + 1vw);
 }

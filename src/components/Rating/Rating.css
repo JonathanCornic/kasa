@@ -3,7 +3,7 @@
 }
 
 .rating-ul li {
-    margin-left: 2%;
+    margin-right: 2vw;
 }
 .rating-ul li img{
     width: calc(1rem + 1vw);

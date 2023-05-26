@@ -3,17 +3,20 @@
     padding-bottom: 70%;
     position: relative;
 }
-.title-container h1{
+
+.title-container h1 {
     font-weight: 500;
     font-size: calc(1.7rem + 1vw);
     margin: 2% 0;
 }
-.title-container h2{
+
+.title-container h2 {
     font-weight: 500;
     font-size: calc(1rem + 1vw);
     margin: 2% 0;
 }
-.rating-author-container{
+
+.rating-author-container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -33,5 +36,39 @@
     .carrousel-container {
         padding-bottom: 35%;
     }
+
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-container h1 {
+        font-size: 2vw;
+    }
+
+    .title-container h2 {
+        font-size: 1.5vw;
+        margin: 0 0 3vw 0;
+        
+    }
+
+    .rating-author-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .rating-ul li {
+        margin-right: 0;
+        margin-left: 2vw;
+    }
+
+    .housing-collapse-container {
+        display: flex;
+        gap: 4vw;
+    }
+
+
 
 }
