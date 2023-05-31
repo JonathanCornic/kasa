@@ -1,12 +1,17 @@
-import { useNavigate } from 'react-router-dom'
-import './Card.css'
+import { useNavigate } from 'react-router-dom';
+import './Card.css';
 
 const Card = ({ id, cover, title }) => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleImageClick = () => {
-        navigate(`/housing/${id}`)
-    }
+        if (id) {
+            navigate(`/housing/${id}`);
+        } else {
+            navigate('*');
+        }
+    };
+
     return (
         <li className="card" onClick={handleImageClick}>
             <div className="card-image-container">
@@ -16,7 +21,7 @@ const Card = ({ id, cover, title }) => {
                 <h2>{title}</h2>
             </div>
         </li>
-    )
-}
+    );
+};
 
-export default Card
+export default Card;

@@ -13,6 +13,7 @@
     z-index: 1;
     transform: translateY(-50%);
     width: 4vw;
+    cursor: pointer;
 }
 
 .chevron-next {
@@ -22,6 +23,7 @@
     z-index: 1;
     transform: translateY(-50%) rotate(180deg);
     width: 4vw;
+    cursor: pointer;
 }
 .counter{
     position: absolute;
