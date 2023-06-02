@@ -1,7 +1,7 @@
 import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
 import jsonData from '../../datas/datas.json'
-import bannerImage from '../../assets/banner-home.jpg'
+import bannerImage from '../../assets/banner-home.webp'
 import './Home.css'
 
 const Home = () => {

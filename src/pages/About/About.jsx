@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner/Banner'
-import bannerImage from '../../assets/banner-about.jpg'
+import bannerImage from '../../assets/banner-about.webp'
 import Collapse from '../../components/Collapse/Collapse'
 import Data from '../../datas/about.json'
 import './About.css'
