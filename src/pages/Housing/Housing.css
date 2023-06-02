@@ -70,6 +70,7 @@
     .rating-ul li {
         margin-right: 0;
         margin-left: 2rem;
+        padding-bottom: 0.3rem;
     }
 
     .housing-collapse-container {
