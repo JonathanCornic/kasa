@@ -69,16 +69,19 @@
 
 @media (min-width: 1024px) {
     .home-main{
-        margin: 4vw auto;
+        margin: 4rem auto;
     }
     .home-banner-container {
         padding-bottom: 20%;
+    }
+    .banner-title{
+        font-size: clamp(3rem, 3vw, 4rem);
     }
 
     .gallery ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 4vw;
+        gap: clamp(2rem, 3vw, 5rem);
         padding: 5%;
     }
 
@@ -98,6 +101,6 @@
     }
 
     .card-title-container h2 {
-        font-size: 1.5vw;
+        font-size: clamp(1rem, 1.5vw, 1.8rem);
     }
 }

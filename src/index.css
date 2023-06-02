@@ -26,10 +26,12 @@ nav,
 header {
     margin: 0 auto;
     width: 90%;
+    max-width: 1440px;
 }
 
 main {
     flex-grow: 1;
     margin: 0 auto;
     width: 90%;
+    max-width: 1440px;
 }

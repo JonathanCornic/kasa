@@ -18,14 +18,11 @@
     .about-main{
         padding: 2% 10%;
     }
-    .collapse-title{
-        font-size: 2.5vw;
+    
+}
+@media (min-width: 1440px) {
+    .about-main{
+        padding: 2rem 15rem;
     }
-    .collapse-chevron{
-        width: 2vw;
-    }
-    .collapse-content{
-        font-size: 2.5vw;
-    }
-
+    
 }

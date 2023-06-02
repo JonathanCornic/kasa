@@ -7,13 +7,13 @@
 
 .error-title {
     font-weight: 700;
-    font-size: 20vw;
+    font-size: clamp(8rem, 18vw, 30rem);
 }
 
 .error-txt {
     text-align: center;
     font-weight: 500;
-    font-size: calc(1.3rem + 2vw);
+    font-size: clamp(1.3rem, 3vw, 4rem);
     margin: 3rem 0;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .error-redirection {
-    font-size: calc(1.2rem + 1vw);
+    font-size: clamp(1.3rem, 3vw, 4rem);
     text-decoration: underline;
     margin: 10rem 0;
 }

@@ -8,11 +8,11 @@ nav ul {
     display: flex;
 }
 .kasa-logo-red{
-    width: calc(10rem + 10vw);
+    width: clamp(10rem, 13vw, 20rem);
 }
 nav ul li a{
-    font-size: calc(1rem + 1vw);
-    margin-left: 3vw;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    margin-left: clamp(1rem, 2vw, 3rem);
 }
 
 a.active {

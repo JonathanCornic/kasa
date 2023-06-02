@@ -7,8 +7,11 @@ footer{
     min-height: 20rem;
     padding: 5rem 0;
 }
+.kasa-logo-white{
+    width: clamp(8rem, 14vw, 17rem);
+}
 .copyright {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
     margin-top: 2rem;
 }
