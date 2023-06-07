@@ -13,6 +13,8 @@ html {
     list-style-type: none;
     text-decoration: none;
     color: #FF6060;
+    /* box-shadow: 0 0 0 1px red;
+    inset: ; */
 }
 
 #root {

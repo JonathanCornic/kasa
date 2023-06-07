@@ -1,16 +1,16 @@
-import { useNavigate } from 'react-router-dom';
-import './Card.css';
+import { useNavigate } from 'react-router-dom'
+import './Card.css'
 
 const Card = ({ id, cover, title }) => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const handleImageClick = () => {
         if (id) {
-            navigate(`/housing/${id}`);
+            navigate(`/housing/${id}`)
         } else {
-            navigate('*');
+            navigate('*')
         }
-    };
+    }
 
     return (
         <li className="card" onClick={handleImageClick}>
@@ -21,7 +21,7 @@ const Card = ({ id, cover, title }) => {
                 <h2>{title}</h2>
             </div>
         </li>
-    );
-};
+    )
+}
 
-export default Card;
+export default Card
