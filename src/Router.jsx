@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer'
 
 const Router = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/kasa'>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
