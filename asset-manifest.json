@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.2eb7a909.css",
+    "main.js": "/kasa/static/js/main.e25d19d4.js",
+    "static/media/banner-about.webp": "/kasa/static/media/banner-about.ad1a2d89a6b1f2fbdc24.webp",
+    "static/media/banner-home.webp": "/kasa/static/media/banner-home.8facc065467a8c6c0403.webp",
+    "static/media/logo-red.svg": "/kasa/static/media/logo-red.ac38b36ec692f2f5731bc84c1ac2030e.svg",
+    "static/media/logo-white.svg": "/kasa/static/media/logo-white.2553fb29683f2c12e44904bd8503bf1b.svg",
+    "index.html": "/kasa/index.html",
+    "static/media/star-grey.svg": "/kasa/static/media/star-grey.afb5c361d3cd347bd08c4f5257c7812e.svg",
+    "static/media/star-red.svg": "/kasa/static/media/star-red.7e7a7ebc3dc75fde21243fbcfec8980d.svg",
+    "static/media/chevron.svg": "/kasa/static/media/chevron.2da87fba751bb5cc84497bba8489fd7c.svg",
+    "static/media/chevron-carrousel.svg": "/kasa/static/media/chevron-carrousel.e1c831f025531aaa34d3eb308a748ce2.svg",
+    "main.2eb7a909.css.map": "/kasa/static/css/main.2eb7a909.css.map",
+    "main.e25d19d4.js.map": "/kasa/static/js/main.e25d19d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eb7a909.css",
+    "static/js/main.e25d19d4.js"
+  ]
+}
