@@ -42,5 +42,5 @@ Réalisation d'un site de location immobilière avec react
 
 Si vous avez des questions, des commentaires ou des propositions de collaboration, n'hésitez pas à me contacter par e-mail à cornicjonathan@gmail.com ou via mon profil LinkedIn à https://www.linkedin.com/in/jonathan-cornic-024607262/.
 
-Je suis fier d'avoir pu réalisé ce projet qui m'à appris pas mal de choses sur react, et je suis heureux de partager cette expérience avec vous.
+Je suis fier d'avoir pu réaliser ce projet qui m'à appris pas mal de choses sur react, et je suis heureux de partager cette expérience avec vous.
 
