@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Kasa
+Projet 6 OpenClassrooms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Location immobilière](https://img.shields.io/badge/Location%20immobilière-kasa-red)
 
-## Available Scripts
+Réalisation d'un site de location immobilière avec react
 
-In the project directory, you can run:
+<div align="center">
+<img src="https://github.com/JonathanCornic/kasa/blob/main/kasa-preview.png.png">
+</div>
 
-### `yarn start`
+## Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Présentation d'une sélection de bien immobiliers.
+- Au clic sur les cards, renvoie vers une page logements créée a partir de l'id.
+- La page logement répertorie le nom du produit, l'autheur, les tags, la notation, un carrousel ainsi qu'une description contenue dans un composant colapse.
+- Le Carrousel affiche un compteur selon le nombre d'images presente dans la page ainsi que deux chevrons permettant la navigation.
+- Gestion des erreurs de routage et redirection vers la page 404. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies utilisées
 
-### `yarn test`
+- Create react app
+- React
+- CSS3
+- Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Comment exécuter le projet localement
 
-### `yarn build`
+1. Ouvrir un terminal : entrer `cd desktop`
+2. Clonez le repository : entrer git clone `https://github.com/JonathanCornic/kasa.git`
+3. Entrer `cd kasa`
+4. Puis `yarn install` pour telecharger le node_modules
+5. Enfin `yarn start`pour lancer l'application
+6. si vous recontrez des problèmes avec __yarn__ essayez `npm install` puis `npm run start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Comment voir le rendu hébergé
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. suivez ce lien github pages https://jonathancornic.github.io/kasa/
+2. suivez ce lien vers clouflare https://kasa-2m0.pages.dev/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Comment me contacter
 
-### `yarn eject`
+Si vous avez des questions, des commentaires ou des propositions de collaboration, n'hésitez pas à me contacter par e-mail à cornicjonathan@gmail.com ou via mon profil LinkedIn à https://www.linkedin.com/in/jonathan-cornic-024607262/.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Je suis fier d'avoir pu réaliser ce projet qui m'à appris pas mal de choses sur react, et je suis heureux de partager cette expérience avec vous.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
