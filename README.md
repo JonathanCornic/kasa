@@ -35,8 +35,7 @@ Réalisation d'un site de location immobilière avec react
 
 ## Comment voir le rendu hébergé
 
-1. suivez ce lien github pages https://jonathancornic.github.io/kasa/
-2. suivez ce lien vers clouflare https://kasa-2m0.pages.dev/
+Suivez ce lien vers clouflare https://kasa-2m0.pages.dev/
 
 ## Comment me contacter
 
