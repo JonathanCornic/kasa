@@ -6,7 +6,7 @@ Projet 6 OpenClassrooms
 Réalisation d'un site de location immobilière avec react
 
 <div align="center">
-<img src="https://github.com/JonathanCornic/kasa/blob/main/kasa-preview.png.png">
+<img src="https://github.com/JonathanCornic/kasa/blob/main/kasa-preview.png">
 </div>
 
 ## Fonctionnalités
